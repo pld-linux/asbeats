@@ -5,8 +5,10 @@ Release:	3
 URL:		http://bohemians.org/~iznogood/asbeats/
 Source:		http://bohemians.org/~iznogood/asbeats/%{name}-%{version}.tar.gz
 Copyright:	GPL
-Group:		X11/Utilities
-Group(pl):	X11/Narzêdzia
+Group:		X11/Window Managers/Tools                                                                                     
+Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
+BuildPrereq:	xpm-devel
+BuildPrereq:	XFree86-devel
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
@@ -17,13 +19,17 @@ called Beats.
 %setup -q
 
 %build
-make
+make CC="gcc $RPM_OPT_FLAGS"
 
 %install
+rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/usr/X11R6/bin
 install -s asbeats $RPM_BUILD_ROOT/usr/X11R6/bin
 
 gzip -9nf README* CHANGES*
+
+%clean
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root)
@@ -31,8 +37,13 @@ gzip -9nf README* CHANGES*
 %attr(755,root,root) /usr/X11R6/bin/asbeats
 
 %changelog
-* Mon May 3 1999 Micha³ Kuratczyk <kura@pld.org.pl>
+* Mon May 3 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
   [0.2-3]
+- added using $RPM_OPT_FLAGS in %build,
+- changed Group to X11/Window Managers/Tools,
+- added %clean and "rm -rf $RPM_BUILD_ROOT" on top %install.
+
+* Mon May 3 1999 Micha³ Kuratczyk <kura@pld.org.pl>
 - added -q %setup parameter
 - changes for common l&f
 - added gzipping documentation
