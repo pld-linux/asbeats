@@ -2,11 +2,11 @@ Summary:	Dockable clock that only displays Beats
 Name:		asbeats
 Version:	0.2
 Release:	3
-URL:		http://bohemians.org/~iznogood/asbeats/
-Source:		http://bohemians.org/~iznogood/asbeats/%{name}-%{version}.tar.gz
 Copyright:	GPL
 Group:		X11/Window Managers/Tools                                                                                     
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
+Source:		http://bohemians.org/~iznogood/asbeats/%{name}-%{version}.tar.gz
+URL:		http://bohemians.org/~iznogood/asbeats/
 BuildPrereq:	xpm-devel
 BuildPrereq:	XFree86-devel
 BuildRoot:	/tmp/%{name}-%{version}-root
