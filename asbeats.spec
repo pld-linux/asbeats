@@ -9,7 +9,7 @@ Source:		http://bohemians.org/~iznogood/asbeats/%{name}-%{version}.tar.gz
 URL:		http://bohemians.org/~iznogood/asbeats/
 BuildRequires:	xpm-devel
 BuildRequires:	XFree86-devel
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Dockable application that will display the new Internet time from Swatch
