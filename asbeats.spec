@@ -1,4 +1,5 @@
 Summary:	Dockable clock that only displays Beats
+Summary(pl):	Dokowalny zegar wy¶wietlaj±cy tylko Beats
 Name:		asbeats
 Version:	0.2
 Release:	3
@@ -17,6 +18,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Dockable application that will display the new Internet time from
 Swatch called Beats.
+
+%description -l pl
+Dokowalna aplikacja wy¶wietlkaj±ca nowy czas internetowy z zegara
+nazwanego Beats.
 
 %prep
 %setup -q
