@@ -23,7 +23,7 @@ Swatch called Beats.
 %setup -q
 
 %build
-make CC="gcc $RPM_OPT_FLAGS"
+%{__make} CC="gcc $RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
