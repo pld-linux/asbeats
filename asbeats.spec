@@ -3,8 +3,8 @@ Name:		asbeats
 Version:	0.2
 Release:	3
 License:	GPL
-Group:		X11/Window Managers/Tools                                                                                     
-######		Unknown group!
+Group:		X11/Window Managers/Tools
+Group(de):	X11/Fenstermanager/Werkzeuge
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://bohemians.org/~iznogood/asbeats/%{name}-%{version}.tar.gz
 URL:		http://bohemians.org/~iznogood/asbeats/
@@ -22,13 +22,13 @@ Swatch called Beats.
 %setup -q
 
 %build
-%{__make} CC="gcc $RPM_OPT_FLAGS"
+%{__make} CC="%{__cc} %{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 
-install -s asbeats $RPM_BUILD_ROOT%{_bindir}
+install asbeats $RPM_BUILD_ROOT%{_bindir}
 
 gzip -9nf README* CHANGES*
 
