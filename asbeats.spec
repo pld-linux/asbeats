@@ -5,8 +5,6 @@ Version:	0.2
 Release:	3
 License:	GPL
 Group:		X11/Window Managers/Tools
-Group(de):	X11/Fenstermanager/Werkzeuge
-Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://bohemians.org/~iznogood/asbeats/%{name}-%{version}.tar.gz
 URL:		http://bohemians.org/~iznogood/asbeats/
 BuildRequires:	XFree86-devel
