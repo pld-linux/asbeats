@@ -10,8 +10,6 @@ URL:		http://bohemians.org/~iznogood/asbeats/
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 Dockable application that will display the new Internet time from
