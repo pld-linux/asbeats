@@ -35,18 +35,3 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root)
 %doc *.gz
 %attr(755,root,root) /usr/X11R6/bin/asbeats
-
-%changelog
-* Mon May 3 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
-  [0.2-3]
-- added using $RPM_OPT_FLAGS in %build,
-- changed Group to X11/Window Managers/Tools,
-- added %clean and "rm -rf $RPM_BUILD_ROOT" on top %install.
-
-* Mon May 3 1999 Micha³ Kuratczyk <kura@pld.org.pl>
-- added -q %setup parameter
-- changes for common l&f
-- added gzipping documentation
-- added stripping binary
-- removed LICENCE from %doc (GPL)
-- added Group(pl)
