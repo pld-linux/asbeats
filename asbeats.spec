@@ -8,7 +8,6 @@ Group:		X11/Window Managers/Tools
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://bohemians.org/~iznogood/asbeats/%{name}-%{version}.tar.gz
 URL:		http://bohemians.org/~iznogood/asbeats/
-BuildRequires:	xpm-devel
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
