@@ -18,7 +18,7 @@ Dockable application that will display the new Internet time from
 Swatch called Beats.
 
 %description -l pl
-Dokowalna aplikacja wy¶wietlkaj±ca nowy czas internetowy z zegara
+Dokowalna aplikacja wy¶wietlaj±ca nowy czas internetowy z zegara
 nazwanego Beats.
 
 %prep
