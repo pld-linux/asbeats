@@ -6,6 +6,7 @@ Release:	3
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://bohemians.org/~iznogood/asbeats/%{name}-%{version}.tar.gz
+# Source0-md5:	b323d177f077818b6d0f93319bee902d
 URL:		http://bohemians.org/~iznogood/asbeats/
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
