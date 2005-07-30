@@ -11,7 +11,6 @@ URL:		http://bohemians.org/~iznogood/asbeats/
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-
 %description
 Dockable application that will display the new Internet time from
 Swatch called Beats.
