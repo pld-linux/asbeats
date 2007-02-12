@@ -1,5 +1,5 @@
 Summary:	Dockable clock that only displays Beats
-Summary(pl.UTF-8):   Dokowalny zegar wyświetlający tylko Beats
+Summary(pl.UTF-8):	Dokowalny zegar wyświetlający tylko Beats
 Name:		asbeats
 Version:	0.2
 Release:	3
